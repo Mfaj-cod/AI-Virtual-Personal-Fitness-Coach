@@ -80,9 +80,6 @@ class PoseTransformer(VideoProcessorBase):
             except queue.Full:
                 pass  # Queue is full, skip this update
 
-        # Append a lightweight debug record to disk so we can inspect what the
-        # transformer actually saw even if queue updates are skipped. This file
-        # is appended to and is safe to read from the main thread for post-mortem.
         try:
             log_path = "data/transformer_log.csv"
             # Ensure data directory exists
