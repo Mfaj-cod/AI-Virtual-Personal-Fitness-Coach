@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Build outputs
+dist/
+build/
+*.pyc
+*.pyo
+*.js.map
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Testing
+.pytest_cache/
+coverage/
+.nyc_output/
